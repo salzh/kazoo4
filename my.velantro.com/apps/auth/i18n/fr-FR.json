@@ -1,0 +1,105 @@
+{
+	"password": "Mot de Passe",
+	"rememberMe": "Se souvenir de moi",
+	"forgotPassword": "Mot de passe oublié?",
+	"username": "Nom d'utilisateur",
+	"or": "OU",
+	"errorLoadingAccount": "Une erreur inconnue est intervenue durant le chargement de votre compte",
+
+	"confirmLogout": "Souhaitez-vous vraiment vous déconnecter?",
+
+	"account": {
+		"name": "Nom de compte",
+		"namePlaceholder": "Nom d'entreprise",
+		"realm": "Royaume",
+		"realmPlaceholder": "Royaume du compte"
+	},
+
+	"login":{
+		"buttonText": "Se connecter"
+	},
+
+	"conferenceLogin": {
+		"userTab": "Utilisateur",
+		"adminTab": "Administrateur",
+		"headerLabel": "Login",
+		"pinLabel": "Code PIN",
+		"nameLabel": "Nom",
+		"callInLabel": "Votre numéro",
+		"optionalSplitter": "Optionnel",
+		"buttonLabel": "Se connecter"
+	},
+
+	"passwordUpdate": {
+		"title": "Nouveau mot de passe",
+		"label": {
+			"password": {
+				"new": "Nouveau mot de passe",
+				"confirmation": "Confirmation du nouveau mot de passe"
+			}
+		},
+		"help": {
+			"text": "Vous avez réinitialisé votre mot de passe et utilisez maintenant un mot de passe temporaire. Vous pouvez le changer ou continuer à l'utlisez."
+		},
+		"button": {
+			"update": "sauvegarder le mot de passe"
+		},
+		"toastr": {
+			"success": {
+				"update": "Votre mot de passe a été sauvegardé avec succès"
+			},
+			"error": {
+				"password": "Les mots de passe ne correspondent pas !"
+			}
+		}
+	},
+
+	"toastrMessages": {
+		"appListError": "Un problème est intervenu durant le chargement de vos applications."
+	},
+
+	"__comment": "UI-1666: Show # of days left in account",
+	"__version": "3.22",
+	"trialDaysLeft": "{{variable}} jours de test restants",
+	"trialExpired": "Version expirée!",
+	"trialPopup": {
+		"title": "Statut du Test",
+		"closeButton": "Continuer période d'essai",
+		"upgradeButton": "Améliorer",
+		"mainMessage": "Bievenue dans votre phase de test. Vous avez {{variable}} jours restants pour tester la plateforme!",
+		"trialExpired": "Votre période d'essai est terminé. Veuillez cliquer sur le bouton Améliorer afin de continuer à utiliser la plateforme."
+	},
+
+
+	"__comment": "UI-1848: new password recovery process",
+	"__version": "3.23",
+	"recoverPassword": {
+		"toastr": {
+			"success": {
+				"reset": "Votre mot de passe a été réinitialisé avec succès. Un email a été envoyé à votre adresse de login."
+			},
+			"error": {
+				"reset": {
+					"account_name": "Le nom de compte fourni n'a pas pu être trouvé",
+					"account_realm": "Le royaume de compte fourni n'a pas pu être trouvé",
+					"phone_number": "Le numéro de téléphone fourni n'a pas pu être trouvé",
+					"username": "Le nom d'utilisateur founi n'a pas pu être trouvé"
+				},
+				"missing": "Veuillez spécifier un nom de compte ou un numéro de téléphone lié à votre compte"
+			}
+		},
+		"successReset": "Votre mot de passe a été réinitialisé avec succès. Un email a été envoyé à votre adresse de login.",
+		"headline": "Afin de récuperer votre mot de passe, vous devez fournir votre identifiant:",
+		"emailPlaceholder": "Identifiant",
+		"headline2": "Et un de ces deux champs (un seul est nécessaire):",
+		"accountNamePlaceholder": "Nom de Compte",
+		"phoneNumberPlaceholder": "Numéro de téléphone",
+		"resetPassword": "Réinitialiser Mot de Passe",
+		"rememberPassword": "Vous vous souvenez de votre mot de passe?",
+		"backToSignIn": "Retourner à l'identification"
+	},
+
+	"__comment": "UI-2463: New Announcement Mechanism",
+	"__version": "4.0",
+	"invalidCredentials": "Identifiants non valides"
+}

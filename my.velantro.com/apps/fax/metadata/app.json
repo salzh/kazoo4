@@ -1,0 +1,28 @@
+{
+	"name": "fax",
+	"i18n": {
+		"en-US": {
+			"label": "Fax Manager",
+			"description": "The Fax Manager allow you to review inbound and outbound faxes.",
+			"extended_description": "",
+			"features": [
+			]
+		}
+	},
+	"tags": [
+		"reseller"
+	],
+	"icon": "Fax_app.png",
+	"api_url": "http://10.26.0.41:8000/v2",
+	"author": "2600Hz",
+	"version": "1.0",
+	"license": "-", 
+	"price": 0,
+	"screenshots": [
+	],
+	"urls": {
+		"documentation": "{documentation_url}",
+		"howto": "{howto_video_url}"
+	},
+	"pvt_type": "app"
+}

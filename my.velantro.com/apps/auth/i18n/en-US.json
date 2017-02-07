@@ -1,0 +1,130 @@
+{
+	"welcome": "Your Unified Communications Platform",
+	"password": "Password",
+	"rememberMe": "Remember me",
+	"forgotPassword": "Forgot Info?",
+	"username": "Username",
+	"registerMessage": "Use one account for all your services",
+	"registerLink": "Register",
+	"or": "OR",
+	"errorLoadingAccount": "An error occured while loading your account",
+
+	"confirmLogout": "Are you sure that you want to log out?",
+
+	"account": {
+		"name": "Account Name",
+		"namePlaceholder": "Company Name",
+		"realm": "Account Realm",
+		"realmPlaceholder": "Account Realm"
+	},
+
+	"login":{
+		"buttonText": "Sign in"
+	},
+
+	"conferenceLogin": {
+		"userTab": "User",
+		"adminTab": "Administrator",
+		"headerLabel": "Conference Login",
+		"pinLabel": "Pin Number",
+		"nameLabel": "Name",
+		"callInLabel": "Your 'Call-in' Phone Number",
+		"optionalSplitter": "Optional",
+		"buttonLabel": "Log-in to Conference"
+	},
+
+	"passwordUpdate": {
+		"title": "Password Update",
+		"label": {
+			"password": {
+				"new": "New password",
+				"confirmation": "Confirm new password"
+			}
+		},
+		"help": {
+			"text": "You have successfully reset your password. Set your new password above, and you'll be able to log in with it the next time you use the application!"
+		},
+		"button": {
+			"update": "Update Password"
+		},
+		"toastr": {
+			"success": {
+				"update": "Your password was successfully updated"
+			},
+			"error": {
+				"password": "Password typed don't match. Please retype your new password"
+			}
+		}
+	},
+
+	"toastrMessages": {
+		"appListError": "A problem occured while loading your list of applications."
+	},
+
+	"__comment": "UI-1666: Show # of days left in account",
+	"__version": "3.22",
+	"trialDaysLeft": "{{variable}} days left in trial",
+	"trialExpired": "Trial Expired!",
+	"trialPopup": {
+		"title": "Trial status",
+		"closeButton": "Continue Trial",
+		"upgradeButton": "Upgrade Now",
+		"mainMessage": "Welcome back to your trial. You have {{variable}} days left to try out the platform.",
+		"trialExpired": "Your trial expired, please click on the Upgrade button to continue using the platform.",
+		"alreadyUpgraded": "Welcome back to your trial. You have already requested an upgrade for your account, you will be notified via email when the upgrade is active!"
+	},
+
+	"__comment": "UI-1787: now handling upgrade of trial accounts",
+	"__version": "3.22",
+	"trial": {
+		"noCreditCard": "Please try to upgrade again once you filled your credit card information...",
+		"successUpgrade": {
+			"content": "Once your order is processed, you will receive instructions via email on how to sign into your new account. If you have any questions in the meantime, please contact sales@2600hz.com and someone will assist you.",
+			"title": "Thank you for your order!"
+		}
+	},
+
+	"__comment": "UI-1848: new password recovery process",
+	"__version": "3.23",
+	"recoverPassword": {
+		"toastr": {
+			"success": {
+				"reset": "An email has been sent to the address you provided. Please check that email for temporary credentials that you can use to access your account. Once signed in, you will need to change/update your password."
+			},
+			"error": {
+				"reset": {
+					"account_name": "The account name provided could not be found",
+					"account_realm": "The account realm provided could not be found",
+					"phone_number": "The phone number provided could not be found",
+					"username": "The username provided could not be found"
+				},
+				"missing": "Please input either an account name or a phone number linked to your account"
+			}
+		},
+		"successReset": "An email has been sent to the address you provided. Please check that email for temporary credentials that you can use to access your account. Once signed in, you will need to change/update your password.",
+		"headline": "In order to recover your password, please enter your Email/Username:",
+		"emailPlaceholder": "Email/Username",
+		"headline2": "And one of the following (only one is required):",
+		"accountNamePlaceholder": "Account Name",
+		"phoneNumberPlaceholder": "Phone Number",
+		"resetPassword": "Reset Password",
+		"rememberPassword": "Remember your password?",
+		"backToSignIn": "Back to Sign In"
+	},
+
+	"__comment": "UI-1874: new trial greeting mechanism",
+	"__version": "4.0",
+	"trialGreetingsDialog": {
+		"title": "Welcome to the Platform!",
+		"content": "The step-by-step wizard will help familiarize you with the platform so that you can begin setting up your business phone system.",
+		"go": "Go"
+	},
+
+	"__comment": "UI-1995: New Announcement Mechanism",
+	"__version": "3.22",
+	"announcementTitle": "Announcement",
+
+	"__comment": "UI-2463: New Announcement Mechanism",
+	"__version": "4.0",
+	"invalidCredentials": "Invalid Credentials"
+}
