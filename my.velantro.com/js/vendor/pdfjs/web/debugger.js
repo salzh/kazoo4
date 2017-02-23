@@ -14,7 +14,7 @@
  */
 /* globals PDFJS */
 
-
+'use strict';
 
 var FontInspector = (function FontInspectorClosure() {
   var fonts;

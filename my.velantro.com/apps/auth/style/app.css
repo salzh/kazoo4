@@ -1,4 +1,6 @@
-
+/* _colors.scss */
+/* unique color names */
+/* semantic color names */
 #auth_container.login-background {
   position: absolute;
   top: 0;
@@ -7,35 +9,50 @@
   left: 0;
   background: url(static/images/bg.svg) no-repeat center center #303039;
   background-size: cover; }
+
 #auth_container .error-message-wrapper {
   display: none; }
+
 #auth_container .error-message-wrapper .text {
   margin-left: 5px;
   display: inline-block;
   margin-bottom: 10px; }
+
 #auth_container ::selection {
   background: #00B8FF;
   color: #ffffff; }
+
 #auth_container ::-moz-selection {
   background: #00B8FF;
   color: #ffffff; }
+
 #auth_container a {
   text-decoration: none; }
+
 #auth_container a:focus {
   outline: none; }
+
 #auth_container .hidden {
   display: none; }
+
+/* 
+===================================== 
+	   LOGO AND INTRO TEXT                
+===================================== 
+*/
 #auth_container .intro {
   margin: 0 auto;
   width: 60%;
   float: left;
   height: 100vh; }
+
 #auth_container .intro .content {
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%); }
+
 #auth_container .logo {
   width: 210px;
   height: 50px;
@@ -43,6 +60,7 @@
   background-repeat: no-repeat;
   background-position: center;
   margin: 0 auto; }
+
 #auth_container .intro h1 {
   text-align: center;
   color: #ffffff;
@@ -50,11 +68,18 @@
   letter-spacing: .015em;
   margin-top: 25px;
   font-size: 34px; }
+
+/* 
+===================================== 
+	   FORM CONTAINERS/FORMS                 
+===================================== 
+*/
 #auth_container .form-container {
   margin: 0 auto;
   width: 40%;
   float: right;
   height: 100vh; }
+
 #auth_container form {
   padding: 20px;
   width: 300px;
@@ -66,20 +91,24 @@
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%); }
+
 #auth_container .reset-notification p {
-  
+  /*display: none;*/
   color: #c0c0c9;
   margin-top: 0;
   margin-bottom: 18px;
   font-size: 15px;
   text-align: center; }
+
 #auth_container .input-wrap {
   position: relative;
   height: 40px;
   width: 100%;
   margin: 25px 0; }
+
 #auth_container .input-wrap.alpha {
   margin-top: 15px; }
+
 #auth_container .input-wrap input {
   border: none;
   border-bottom: 1px solid #808089;
@@ -98,8 +127,10 @@
   -o-transition: border 0.2s;
   -ms-transition: border 0.2s;
   transition: border 0.2s; }
+
 #auth_container .input-wrap input:focus {
   outline: none; }
+
 #auth_container .input-wrap .placeholder-shift {
   position: absolute;
   top: 14px;
@@ -112,16 +143,19 @@
   -o-transition: all 0.2s ease-out;
   -ms-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out; }
+
 #auth_container .input-wrap input:focus + .placeholder-shift {
   top: -12px;
   font-size: 12px;
   color: #22A5FF;
   letter-spacing: .02em; }
+
 #auth_container .input-wrap .placeholder-shift.fixed {
   top: -12px;
   font-size: 12px;
   letter-spacing: .02em;
   color: #808089; }
+
 #auth_container .input-wrap .border-grow {
   position: absolute;
   display: block;
@@ -134,9 +168,11 @@
   -o-transition: width 0.2s ease-out;
   -ms-transition: width 0.2s ease-out;
   transition: width 0.2s ease-out; }
+
 #auth_container .input-wrap input:focus + .placeholder-shift + .border-grow {
   width: 100%;
   height: 2px; }
+
 #auth_container .btn-submit {
   width: 100%;
   border-radius: 2px;
@@ -150,25 +186,31 @@
   -o-transition: all 0.2s ease-in;
   -ms-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in; }
+
 #auth_container .btn-submit:hover,
 #auth_container .btn-submit:focus {
   color: #ffffff;
   background: #57bcff;
   outline: none; }
+
 #auth_container .form-info {
   margin-top: 0;
   font-size: 13px;
   color: #c0c0c9; }
+
 #auth_container .form-info.dark {
   color: #808089;
   text-align: center;
   margin: 16px 0 0; }
+
 #auth_container .form-info.dark .form-toggle {
   margin-top: 4px; }
+
 #auth_container .alt-actions {
   font-size: 13px;
   color: #808089;
   padding: 10px 0 16px; }
+
 #auth_container .form-toggle {
   text-align: center;
   display: block;
@@ -176,18 +218,29 @@
   color: #22A5FF;
   margin: 0 auto;
   cursor: pointer; }
+
 #auth_container .form-toggle:hover,
 #auth_container .form-toggle:focus {
   text-decoration: underline; }
+
 #auth_container .alt-actions .monster-checkbox {
   display: inline-block; }
+
 #auth_container .alt-actions .form-toggle {
   display: inline-block;
   float: right; }
+
+/* 
+===================================== 
+	FORM INPUTS WITH .error CLASS                 
+===================================== 
+*/
 #auth_container .input-wrap.error * {
   color: #ff3d24; }
+
 #auth_container .input-wrap.error > .placeholder-shift.fixed {
   color: #ff3d24; }
+
 #auth_container .error-icon {
   visibility: hidden;
   position: absolute;
@@ -201,11 +254,13 @@
   -o-transition: transform .2s ease-out;
   -ms-transition: transform .2s ease-out;
   transition: transform .2s ease-out; }
+
 #auth_container .input-wrap.error .error-icon {
   visibility: visible;
   webkit-transform: scale(1);
   ms-transform: scale(1);
   transform: scale(1); }
+
 #auth_container .input-wrap.error > .border-grow {
   position: absolute;
   display: block;
@@ -218,8 +273,9 @@
   -o-transition: all 0.2s ease-out;
   -ms-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out; }
+
 @media screen and (max-width: 968px) {
-  
+  /* Hack, we still need to fix height of html/body not filling full page */
   #auth_container .form-container {
     height: auto !important;
     background: #202029; }
@@ -252,6 +308,7 @@
     -webkit-transform: translateY(0%);
     -ms-transform: translateY(0%);
     transform: translateY(0%); } }
+
 #auth_container .powered-by-block {
   position: absolute;
   bottom: 0;
@@ -260,8 +317,10 @@
   margin: 20px 0px;
   font-size: 12px;
   color: #606069; }
+
 #auth_container .powered-by-block .tag-version {
   margin-left: 5px; }
+
 #auth_container .powered-by-block a,
 #auth_container .powered-by-block a:hover,
 #auth_container .powered-by-block a:active,
@@ -269,23 +328,33 @@
 #auth_container .powered-by-block a:focus {
   color: #646469;
   text-decoration: none; }
+
+/* Trial Upgrade Popup */
 #trial_upgrade_popup {
   padding: 15px;
   width: 284px; }
+
 #trial_upgrade_popup .actions {
   margin-top: 20px; }
+
 #trial_upgrade_popup .actions #upgrade {
   margin-left: 15px; }
+
+/* Walkthrough popups */
 .trial-first-greeting-popup {
   padding: 15px;
   width: 450px; }
+
 .trial-first-greeting-popup .actions-wrapper {
   border-top: 1px solid #777;
   margin-top: 25px;
   padding-top: 15px;
   text-align: right; }
+
+/* Dialog Reset Password */
 #password_update_dialog {
   width: 500px;
   padding: 15px; }
+
 #password_update_dialog .update-password {
   margin-left: 10px; }

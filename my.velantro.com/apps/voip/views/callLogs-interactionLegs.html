@@ -1,0 +1,47 @@
+{{#each cdrs}}
+	<div class="grid-row extra-leg" data-id={{this.id}}>
+		<div class="grid-cell direction">
+			<div class="sub-cell single-cell"></div>
+		</div>
+		<div class="grid-cell datetime">
+			<div class="sub-cell cell-top">{{this.date}}</div>
+			<div class="sub-cell cell-bottom">{{this.time}}</div>
+		</div>
+		<div class="grid-cell from">
+			{{#if this.fromName}}
+			<div class="sub-cell cell-top">{{formatPhoneNumber this.fromNumber}}</div>
+			<div class="sub-cell cell-bottom">{{this.fromName}}</div>
+			{{else}}
+			<div class="sub-cell single-cell">{{formatPhoneNumber this.fromNumber}}</div>
+			{{/if}}
+		</div>
+		<div class="grid-cell to">
+			{{#if this.toName}}
+			<div class="sub-cell cell-top">{{formatPhoneNumber this.toNumber}}</div>
+			<div class="sub-cell cell-bottom">{{this.toName}}</div>
+			{{else}}
+			<div class="sub-cell single-cell">{{formatPhoneNumber this.toNumber}}</div>
+			{{/if}}
+		</div>
+		<div class="grid-cell duration">
+			<div class="sub-cell single-cell">
+				{{this.duration}}
+			</div>
+		</div>
+		<div class="grid-cell hangup">
+			<div class="sub-cell single-cell cause-title" title="{{this.hangupCause}}">
+				{{this.hangupCause}}
+			</div>
+		</div>
+		<div class="grid-cell actions">
+			<div class="sub-cell single-cell">
+				<i class="fa fa-cog fa-lg details-cdr" data-toggle="tooltip" data-placement="top" data-original-title="{{ @root.i18n.callLogs.actions.details }}"></i>
+			</div>
+		</div>
+		<div class="grid-cell actions">
+			<div class="sub-cell single-cell">
+				<a href='{{this.recording_url}}' target='_blank'>{{this.recording_url_tip}}</a>
+			</div>
+		</div>
+	</div>
+{{/each}}

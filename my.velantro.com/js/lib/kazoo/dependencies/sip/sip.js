@@ -3768,7 +3768,7 @@ SIP.RequestSender = RequestSender;
  * @name SIP
  * @namespace
  */
-
+"use strict";
 
 module.exports = function (environment) {
 

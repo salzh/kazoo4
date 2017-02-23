@@ -1,0 +1,23 @@
+/* _colors.scss */
+/* unique color names */
+/* semantic color names */
+.drop-element.drop-theme-arrows .drop-content {
+  padding: 0;
+  border-radius: 2px;
+  border-width: 1px; }
+
+.drop-element.drop-theme-arrows .drop-content::before {
+  border-width: 10px;
+  filter: none; }
+
+.drop-element.drop-theme-arrows.drop-element-attached-bottom .drop-content::before {
+  border-top-color: #FFF !important; }
+
+.drop-element.drop-theme-arrows.drop-element-attached-left.drop-element-attached-middle .drop-content::before {
+  border-right-color: #FFF !important; }
+
+.drop-element.drop-theme-arrows.drop-element-attached-bottom.drop-element-attached-center .drop-content::before {
+  border-top-color: #FFF !important; }
+
+.drop-element.drop-theme-arrows.drop-element-attached-top.drop-element-attached-left.drop-target-attached-bottom .drop-content::before {
+  border-bottom-color: #FFF !important; }

@@ -1,0 +1,17 @@
+{{#each DIDs}}
+<div class="number-wrapper number-box" data-phone_number="{{ phoneNumber }}" data-search="{{phoneNumber}} {{ formatPhoneNumber phoneNumber }}">
+	<input type="checkbox"></input>
+	<span class="phone-number">{{ formatPhoneNumber phoneNumber }}</span>
+	{{#if isoCountry}}
+		<span class="flag"><img src="css/assets/flags/32/{{ isoCountry }}.png" height="32" width="32"></img></span>
+	{{/if}}
+
+	<div class="number-options pull-right">
+		
+	</div>
+
+	<div class="features pull-right">
+		{{#numberFeatures features}}{{/numberFeatures}}
+	</div>
+</div>
+{{/each}}

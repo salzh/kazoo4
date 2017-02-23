@@ -1,65 +1,99 @@
-
+/* _colors.scss */
+/* unique color names */
+/* semantic color names */
 html,
 body,
 .core-wrapper {
   height: 100%; }
+
+/* Disabling for now, remove if it no longer creates an issue */
+/* body,
+.core-topbar,
+#myaccount,
+#auth_container,
+.core-content {
+	min-width: 200px;
+} */
 .core-wrapper.dashboard .core-content {
   height: 100%; }
+
 .core-content {
   height: calc(100% - 70px); }
+
+/************************************************************/
+/************************** TOPBAR **************************/
+/************************************************************/
 .core-topbar-wrapper {
   background-color: #303039;
   border-top: 5px solid #22A5FF; }
+
 .core-wrapper.dashboard .core-topbar-wrapper {
   display: none; }
+
 .core-topbar {
   height: 65px; }
+
 .core-topbar .main-links {
   height: inherit; }
+
 .core-topbar .main-links,
 .core-topbar .nav {
   float: left;
   margin: 0; }
+
 .core-topbar .links {
   line-height: 65px;
   display: inline-block;
   color: #c0c0c9; }
+
 .core-topbar .links:hover,
 .core-topbar .links:focus {
   cursor: pointer;
   background: transparent; }
+
 .core-topbar .links i {
   vertical-align: middle;
   color: #c0c0c9; }
+
 .core-topbar .links .inline-text {
   display: inline-block;
   float: left;
   margin-right: 10px; }
+
 .core-topbar .links .inline-text.red {
   color: red; }
+
 .core-topbar .links .cell-text {
   line-height: 21px;
   text-align: center; }
+
 .core-topbar .nav {
   float: right; }
+
 .core-topbar .nav .links {
   padding: 0 20px; }
+
 .core-topbar .nav > li {
   border-left: 1px solid #202029; }
+
 .core-topbar .nav > li {
   float: left;
   height: 100%;
   text-decoration: none; }
+
 .core-topbar .links.cell {
   padding: 10px 20px; }
+
 .core-topbar #main_topbar_brand {
   width: 192px;
   height: 100%;
   margin: auto 25px auto 10px;
   background: no-repeat center center; }
+
 .core-topbar #main_topbar_current_app {
   padding: 0 25px;
   border-left: 1px solid #202029; }
+
 .core-topbar #main_topbar_current_app_icon {
   display: inline-block;
   width: 32px;
@@ -70,6 +104,7 @@ body,
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%); }
+
 .core-topbar #main_topbar_current_app_name {
   font-size: 18px;
   display: inline-block;
@@ -78,19 +113,24 @@ body,
   letter-spacing: .5px;
   text-transform: uppercase;
   color: #fff; }
+
 .core-topbar #main_topbar_trial_link_label {
   display: inline-block;
   float: left;
   max-width: 130px; }
+
 .core-topbar #main_topbar_apploader {
   display: none; }
+
 .core-topbar #main_topbar_myaccount_user {
   max-width: 190px; }
+
 .core-topbar .links:hover,
 .core-topbar .links:hover i,
 .core-topbar #main_topbar_current_app_name:hover,
 .core-topbar #main_topbar_myaccount_masquerade_label {
   color: #22A5FF; }
+
 .core-topbar .inline-text,
 .core-topbar .cell-text,
 .core-topbar #main_topbar_current_app_name,
@@ -98,6 +138,7 @@ body,
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis; }
+
 @media (max-width: 1199px) {
   .core-topbar #main_topbar_brand {
     margin-right: 10px; }
@@ -107,9 +148,10 @@ body,
     padding-left: 10px; }
   .core-topbar #main_topbar_current_app_name {
     padding-left: 10px; }
-  
+  /* Needed to allow enough space for the account toggle */
   .core-topbar #main_topbar_myaccount_user {
     max-width: 118px; } }
+
 @media (max-width: 999px) {
   .core-topbar #main_topbar_current_app_icon {
     transform: none;
@@ -117,32 +159,43 @@ body,
   .core-topbar #main_topbar_current_app_name,
   .core-topbar #main_topbar_trial {
     display: none; } }
+
+/***** Account Toggle *****/
 .core-topbar .links#main_topbar_account_toggle_link {
   display: none; }
+
 .core-topbar .links#main_topbar_account_toggle_link.visible {
   display: block; }
+
 .core-topbar #main_topbar_account_toggle.open {
   background-color: #202029; }
+
 .core-topbar #main_topbar_account_toggle.open #main_topbar_account_toggle_link i {
   color: #22A5FF; }
+
 .core-topbar #main_topbar_account_toggle:not(.open) #main_topbar_account_toggle_container {
   display: none; }
+
 .core-topbar #main_topbar_account_toggle_container {
   position: absolute;
   z-index: 21;
-   }
+  /* 1 more than myAccount */ }
+
 .core-topbar #main_topbar_account_toggle_container .account-browser-container {
   background-color: #202029;
   width: 220px;
   padding: 1px;
   border-right: none; }
+
 .core-topbar #main_topbar_account_toggle_container .search-box {
   width: auto;
   padding: 10px;
   border-bottom: none; }
+
 .core-topbar #main_topbar_account_toggle_container .search-box i {
   color: #c0c0c9;
   margin: 8px 0 0 8px; }
+
 .core-topbar #main_topbar_account_toggle_container .search-box .search-query {
   background-color: #404049;
   color: #c0c0c9;
@@ -152,68 +205,93 @@ body,
   border: solid 1px #909099;
   box-shadow: none;
   height: 30px; }
+
 .core-topbar #main_topbar_account_toggle_container .account-list-container {
   width: 440px; }
+
 .core-topbar #main_topbar_account_toggle_container .account-browser-container .account-list,
 .core-topbar #main_topbar_account_toggle_container .account-browser-container .account-list-slider {
   width: 220px; }
+
 .core-topbar #main_topbar_account_toggle_container .account-browser-container .account-list-element {
   border-color: #202029; }
+
 .core-topbar #main_topbar_account_toggle_container .account-browser-container .account-list-element > div {
   background: #303039;
   color: #c0c0c9;
   border-color: #202029; }
+
 .core-topbar #main_topbar_account_toggle_container .account-browser-container .account-list-element.active > div {
   color: #22A5FF; }
+
 .core-topbar #main_topbar_account_toggle_container .account-browser-container .account-link .account-name {
   font-size: 14px; }
+
 .core-topbar #main_topbar_account_toggle_container .account-children-link i:before {
   font-size: 10px;
   color: #c0c0c9;
   content: "\f054"; }
+
 .core-topbar #main_topbar_account_toggle_container .account-children-link.local-back i:before {
   content: "\f053"; }
+
 .core-topbar #main_topbar_account_toggle_container .account-browser-container .account-search-link {
   color: #c0c0c9;
   background: #202029;
   border-color: #909099;
   border-top: solid 1px; }
+
 .core-topbar #main_topbar_account_toggle_container .account-browser-container .account-search-link .account-search-value {
   text-shadow: none;
   font-weight: 700; }
+
 .core-topbar #main_topbar_account_toggle_container .account-browser-container .account-previous-link {
   line-height: 20px;
   border: none; }
+
 .core-topbar #main_topbar_account_toggle_container .account-browser-container .account-previous-link * {
   color: #909099;
   font-size: 12px;
   vertical-align: middle; }
+
 .core-topbar #main_topbar_account_toggle_container .account-browser-container .account-previous-link i:before {
   content: "\f060"; }
+
 .core-topbar #main_topbar_account_toggle_container .account-toggle-header {
   background: #202029;
   color: #c0c0c9;
   padding: 10px 12px 0px 12px;
   position: relative; }
+
 .core-topbar #main_topbar_account_toggle_container .current-account-label {
   font-size: 12px; }
+
 .core-topbar #main_topbar_account_toggle_container .current-account-container {
   color: #22A5FF; }
+
 .core-topbar #main_topbar_account_toggle_container .missing-info {
   color: #909099;
   font-style: italic; }
+
 .core-topbar #main_topbar_account_toggle_container .home-account-link {
   position: absolute;
   top: 15px;
   right: 15px;
   cursor: pointer;
   color: #606069; }
+
 .core-topbar #main_topbar_account_toggle:not(.masquerading) .home-account-link {
   display: none; }
+
 .core-topbar #main_topbar_account_toggle_container .home-account-link:hover {
   color: #c0c0c9; }
+
 #main_topbar_account_toggle.masquerading ~ #main_topbar_myaccount i.fa:before {
   content: "\f085"; }
+
+/************************************************************/
+/********************** LOADING SPINNER *********************/
+/************************************************************/
 .loading-wrapper {
   position: fixed;
   z-index: 2000;
@@ -223,6 +301,7 @@ body,
   height: 200px;
   background: #22A5FF;
   box-shadow: 0px 0px 2px 0px #303039; }
+
 .loading-wrapper.fixed-left {
   left: 0;
   -webkit-transform: translateX(-50%) translateY(-50%) rotate(315deg);
@@ -230,6 +309,7 @@ body,
   -ms-transform: translateX(-50%) translateY(-50%) rotate(315deg);
   -o-transform: translateX(-50%) translateY(-50%) rotate(315deg);
   transform: translateX(-50%) translateY(-50%) rotate(315deg); }
+
 .loading-wrapper.fixed-right {
   right: 0;
   -webkit-transform: translateX(50%) translateY(-50%) rotate(45deg);
@@ -237,8 +317,10 @@ body,
   -ms-transform: translateX(50%) translateY(-50%) rotate(45deg);
   -o-transform: translateX(50%) translateY(-50%) rotate(45deg);
   transform: translateX(50%) translateY(-50%) rotate(45deg); }
+
 .loading-wrapper.active {
   display: block; }
+
 .loading-wrapper .line {
   position: relative;
   display: inline-block;
@@ -253,6 +335,7 @@ body,
   border-bottom-color: #fff;
   border-radius: 50%;
   background: transparent; }
+
 .loading-wrapper .line.outer {
   top: 130px;
   left: 80px;
@@ -260,53 +343,67 @@ body,
   -moz-animation: half-spin 1s infinite;
   -o-animation: half-spin 1s infinite;
   animation: half-spin 1s infinite; }
+
 .loading-wrapper .line.inner {
   -moz-animation: half-spin-reverse 1s infinite;
   -o-animation: half-spin-reverse 1s infinite;
   animation: half-spin-reverse 1s infinite;
   webkit-animation: half-spin-reverse 1s infinite; }
+
 @-webkit-keyframes half-spin {
   0% {
     -webkit-transform: rotateZ(-45deg); }
   100% {
     -webkit-transform: rotateZ(135deg); } }
+
 @-webkit-keyframes half-spin-reverse {
   0% {
     -webkit-transform: rotateZ(0deg); }
   100% {
     -webkit-transform: rotateZ(-360deg); } }
+
 @-moz-keyframes half-spin {
   0% {
     -moz-transform: rotateZ(-45deg); }
   100% {
     -moz-transform: rotateZ(135deg); } }
+
 @-moz-keyframes half-spin-reverse {
   0% {
     -moz-transform: rotateZ(0deg); }
   100% {
     -moz-transform: rotateZ(-360deg); } }
+
 @-o-keyframes half-spin {
   0% {
     -o-transform: rotateZ(-45deg); }
   100% {
     -o-transform: rotateZ(135deg); } }
+
 @-o-keyframes half-spin-reverse {
   0% {
     -o-transform: rotateZ(0deg); }
   100% {
     -o-transform: rotateZ(-360deg); } }
+
 @keyframes half-spin {
   0% {
     transform: rotateZ(-45deg); }
   100% {
     transform: rotateZ(135deg); } }
+
 @keyframes half-spin-reverse {
   0% {
     transform: rotateZ(0deg); }
   100% {
     transform: rotateZ(-360deg); } }
+
+/************************************************************/
+/******************** UPLOAD PROGRESS BAR *******************/
+/************************************************************/
 #upload_progress {
   display: none; }
+
 #upload_progress .upload-progress-overlay {
   position: fixed;
   z-index: 10000;
@@ -316,6 +413,7 @@ body,
   height: 100%;
   background: #303039;
   opacity: 0.5; }
+
 #upload_progress .upload-progress-content {
   position: absolute;
   z-index: 10001;
@@ -327,50 +425,67 @@ body,
   width: 300px;
   background: #f0f0f9;
   box-shadow: 0px 0px 10px 2px #606069; }
+
 #upload_progress .upload-progress-title {
   padding: 10px;
   text-align: center;
   border-bottom: solid 1px #606069; }
+
 #upload_progress .upload-progress-bar {
   margin: 20px;
   height: 20px;
   line-height: 20px;
   border: solid 1px #004c80;
   background: #e0e0e9; }
+
 #upload_progress .upload-progress-bar > div {
   background: #22A5FF;
   height: 100%;
   width: 0%;
   text-align: center;
   font-size: 12px; }
+
+/************************************************************/
+/********************** FLOATING FOOTER *********************/
+/************************************************************/
 .core-footer {
   position: fixed;
   right: 2px;
   bottom: 2px; }
+
+/* Hack for jira collector issue */
 #atlwdg-trigger {
   z-index: 95; }
+
 .core-footer.feedback-enabled {
   right: 117px; }
+
 .core-footer .powered-by > * {
   font-size: 11px;
   margin-right: 5px;
   text-decoration: none;
   color: #333; }
+
+/** Shortcuts **/
 .shortcuts-dialog .items-title {
   margin-top: 10px;
   text-align: center; }
+
 .shortcuts-dialog .items {
   list-style: none;
   margin: 0;
   padding: 10px; }
+
 .shortcuts-dialog .items > li {
   margin-top: 5px; }
+
 .shortcuts-dialog .items dl {
   border-spacing: 0;
   display: table;
   table-layout: fixed;
   margin: 0;
   width: 100%; }
+
 .shortcuts-dialog .items dl > dt {
   color: #707070;
   display: table-cell;
@@ -378,9 +493,11 @@ body,
   text-align: right;
   vertical-align: top;
   width: 220px; }
+
 .shortcuts-dialog .items dl > dd {
   display: table-cell;
   padding-left: 10px; }
+
 .shortcuts-dialog .items kbd {
   box-sizing: border-box;
   background-color: #f7f7f7;
@@ -398,41 +515,57 @@ body,
   text-align: center;
   text-shadow: 0 1px 0 #fff;
   vertical-align: bottom; }
+
 .shortcuts-dialog .shortcuts-category {
   float: left;
   width: 50%; }
+
+/* Short cut debug account Info */
 .debug-dialog {
   padding: 20px; }
+
 .debug-dialog table {
   margin: 0; }
+
 .debug-dialog table tr > td {
   max-width: 850px;
   overflow-wrap: break-word;
   white-space: initial;
   word-break: break-all; }
+
 .debug-dialog table tr td:nth-child(1) {
   font-weight: bold; }
+
+/* Backend Pagination Tables */
 .backend-pagination {
   display: inline-block;
   text-transform: none;
   margin-right: 5px; }
+
 .backend-pagination button {
   margin-right: 5px;
   margin-left: 5px; }
+
 .backend-pagination.full .partial-load,
 .backend-pagination .full-load {
   display: none; }
+
 .backend-pagination.full .full-load,
 .backend-pagination .partial-load {
   display: inline-block; }
+
+/* Page Size Table */
 .table-page-size {
   float: right;
   display: inline-block;
   margin-top: 11px;
   margin-right: 50px; }
+
 .table-page-size select {
   width: 60px;
   margin: 0 5px 3px; }
+
+/* hacky class to use the same style as footable labels */
 .table-page-size span.label {
   float: none !important;
   margin-right: 0 !important; }

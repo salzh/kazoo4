@@ -1,0 +1,26 @@
+<div class="monster-media-selection">
+	<div>
+		<span>{{ label }}</span>
+		<select name="{{ name }}" class="media-dropdown{{#if selectClass}} {{selectClass}}{{/if}}">
+			{{#select selectedOption}}
+				{{#each options}}
+					<option value="{{id}}">{{name}}</option>
+				{{/each}}
+			{{/select}}
+		</select>
+	{{#if uploadButton}}
+		<button type="button" class="monster-button-primary non-fixed upload-toggle" data-toggle="button">
+			{{ uploadLabel }}
+		</button>
+	{{else}}
+		<a href="javascript:void(0);" class="upload-toggle" data-toggle="button">
+			{{uploadLabel}}
+		</a>
+	{{/if}}
+	</div>
+	<div class="upload-div">
+		<input type="file" class="upload-input" accept="audio/*">
+		<button type="button" class="monster-button-success non-fixed upload-action upload-submit"><i class="fa fa-upload"></i></button>
+		<button type="button" class="monster-button-danger non-fixed upload-action upload-cancel"><i class="fa fa-times"></i></button>
+	</div>
+</div>

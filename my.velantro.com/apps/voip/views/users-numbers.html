@@ -1,0 +1,62 @@
+<div class="detail-numbers">
+	<div class="list-wrapper">
+		<div class="list-assigned-items number-list">
+			<div class="empty-row{{#if emptyAssigned}} visible{{/if}}">
+				{{ i18n.users.noAssignedNumbers }}
+			</div>
+			{{#each assignedNumbers}}
+				<div class="item-row" data-id="{{this.phoneNumber}}" data-type="{{this.used_by}}" data-search="{{formatPhoneNumber this.phoneNumber}} {{this.phoneNumber}} {{this.locality.city}} {{this.locality.country}}">
+					<div class="features-block pull-right">
+						<div class="edit-features"></div>
+
+						<div class="features">
+							{{#numberFeatures features}}{{/numberFeatures}}
+							{{#compare state '===' 'port_in'}}
+								<i class="fa fa-exclamation-triangle monster-red active help-popover" data-toggle="tooltip" data-placement="top" data-original-title="{{@root.i18n.portIconHelp}}"></i>
+							{{/compare}}
+						</div>
+					</div>
+
+					<div class="number-container">
+						<button type="button" class="monster-button monster-button-danger remove-number{{#compare this.used_by "===" "mobile"}} disabled" disabled{{else}}"{{/compare}}>{{ @root.i18n.unassign }}</button>
+						<span class="number">
+							{{ formatPhoneNumber this.phoneNumber }}
+						</span>
+					</div>
+					<!--<div class="locality">
+						{{#if this.localityEnabled}}
+							<span class="flag"><img src="css/assets/flags/32/{{ this.locality.iso }}.png" height="32" width="32"></img></span>
+							<span class="city">{{ this.locality.city }}, {{ this.locality.country }}</span>
+						{{else}}
+							N/A
+						{{/if}}
+					</div>
+					-->
+				</div>
+			{{else}}
+
+			{{/each}}
+		</div>
+	</div>
+
+	<div class="actions">
+		<a href="#" class="spare-link monster-link pull-left{{#if emptySpare}} disabled{{/if}}">
+			<i class="fa fa-list monster-green"></i>{{ i18n.users.addFromSpare }}
+		</a>
+		<ul class="buy-dropdown nav pull-left">
+			<li class="dropdown">
+				<a href="#" class="dropdown-toggle buy-dropdown monster-link" data-toggle="dropdown" data-target="#"><i class="fa fa-shopping-cart monster-green"></i>{{ i18n.strategy.numberLinks.buy.link }}</a>
+				<ul class="dropdown-menu" role="menu">
+					<li><a class="buy-link" data-type="regular" href="#">{{i18n.strategy.numberLinks.buy.regular}}</a></li>
+					<li><a class="buy-link" data-type="tollfree" href="#">{{i18n.strategy.numberLinks.buy.tollfree}}</a></li>
+					<!-- <li><a class="buy-link" data-type="vanity" href="#">{{i18n.strategy.numberLinks.buy.vanity}}</a></li> -->
+				</ul>
+			</li>
+		</ul>
+
+		<div class="pull-right">
+			<a class="cancel-link monster-link blue" href="javascript:void(0);">{{ i18n.cancel }}</a>
+			<button type="button" class="monster-button monster-button-success save-numbers">{{ i18n.saveChanges }}</button>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,7 @@
+<a href="#" class="edit">
+{{#if scheduledDate}}
+	{{toFriendlyDate scheduledDate 'shortDateTime'}}
+{{else}}
+	{{i18n.port.addDate}}
+{{/if}}
+</a>

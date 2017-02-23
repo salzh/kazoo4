@@ -23,7 +23,7 @@
            RenderingStates, UNKNOWN_SCALE, DEFAULT_SCALE_VALUE,
            IGNORE_CURRENT_POSITION_ON_ZOOM: true */
 
-
+'use strict';
 
 //var DEFAULT_URL = 'compressed.tracemonkey-pldi-09.pdf';
 var DEFAULT_URL = '';

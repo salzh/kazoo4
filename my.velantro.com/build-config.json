@@ -1,1 +1,1 @@
-{"type":"production","preloadedApps":["accounts","apploader","appstore","auth","callflows","common","core","fax","myaccount","numbers","pbxs","voicemails","voip","webhooks"]}
+{"type":"development","preloadedApps":[]}

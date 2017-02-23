@@ -1,0 +1,44 @@
+<div class="webhook-attempts">
+	<div class="top-action-bar clearfix">
+		<button type="button" class="monster-button back-button">{{i18n.webhooks.webhookAttempts.backButton}}</button>
+		{{#if isError}}
+		<button type="button" class="monster-button-secondary pull-right enable-button">{{i18n.webhooks.webhookAttempts.enableButton}}</button>
+		{{/if}}
+	</div>
+	<div class="attempts-container">
+		<div class="attempts-header">
+			{{#if name}}
+			<div class="webhook-name">{{name}}</div>
+			{{/if}}
+			<div class="webhook-url">{{url}}</div>
+		</div>
+
+		<div class="filters">
+			<div class="date-ranges">
+				<span>{{i18n.startDate}}</span>
+				<input id="startDate" type="text" class="date-filter filter-from">
+				<span>{{i18n.endDate}}</span>
+				<input id="endDate" type="text" class="date-filter filter-to">
+				<button type="button" class="apply-filter monster-button monster-button-primary">{{i18n.filter}}</button>
+			</div>
+		</div>
+
+		<div class="table-container">
+			<table id="webhooks_attempts_grid" class="monster-table footable">
+				<thead>
+					<tr>
+						<th data-sorted="true" data-direction="DESC">{{i18n.webhooks.webhookAttempts.date}}</th>
+						<th>{{i18n.webhooks.webhookAttempts.time}}</th>
+						<th>{{i18n.webhooks.webhookAttempts.sent}}</th>
+						<th>{{i18n.webhooks.webhookAttempts.received}}</th>
+						<th>{{i18n.webhooks.webhookAttempts.retriesLeft}}</th>
+						<th data-filterable="false" data-type="html" data-sortable="false" data-breakpoints="xs"></th>
+					</tr>
+				</thead>
+				<tbody>
+					
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>

@@ -1,448 +1,15 @@
-
-.balance-content-wrapper .dataTables_scroll .dataTables_scrollBody {
-  max-height: 300px; }
-.balance-content-wrapper .title-box.pull-right {
-  margin-left: 10px; }
-.balance-content-wrapper .title-box.primary-box {
-  background-color: #22A5FF;
-  border-color: #22A5FF;
-  color: #fff;
-  cursor: pointer; }
-.balance-content-wrapper .title-box-group .title-box:not(:first-child) {
-  border-bottom-left-radius: 0;
-  border-top-left-radius: 0; }
-.balance-content-wrapper .title-box-group .title-box:not(:last-child) {
-  border-bottom-right-radius: 0;
-  border-top-right-radius: 0;
-  border-right: none; }
-.balance-content-wrapper .action-bar-wrapper {
-  position: absolute;
-  z-index: 25; }
-.balance-content-wrapper .action-bar-wrapper > * {
-  margin: 0 10px 0 0;
-  vertical-align: middle; }
-.balance-content-wrapper .action-bar-wrapper > span {
-  margin-right: 5px; }
-.balance-content-wrapper .action-bar-wrapper input {
-  cursor: pointer;
-  background-color: #f0f0f9;
-  border-radius: 2px;
-  box-shadow: none;
-  text-align: center;
-  width: 80px; }
-.balance-content-wrapper .action-bar-wrapper i.refresh-filter:hover {
-  text-shadow: 1px 1px 0px #999;
-  cursor: pointer; }
-.balance-content-wrapper .action-bar-wrapper .action-number#download {
-  color: #666; }
-.balance-content-wrapper .action-bar-wrapper .action-number#download i {
-  text-decoration: none;
-  margin-right: 5px; }
-.balance-content-wrapper .search-box .search-query {
-  border-radius: 2px;
-  box-shadow: none;
-  padding-left: 36px;
-  width: 160px; }
-.balance-content-wrapper .search-box .fa-search {
-  margin: 8px 0 0 12.5px; }
-.balance-content-wrapper .clickover {
-  width: 270px;
-  font-size: 12px; }
-.balance-content-wrapper table {
-  margin-bottom: 35px; }
-.balance-content-wrapper table .arrow-direction {
-  margin-left: 20px;
-  margin-right: 20px; }
-.add-credits-popup-wrapper {
-  display: block;
-  margin: auto;
-  width: 520px; }
-.add-credits-popup-wrapper label {
-  line-height: 28px;
-  margin-bottom: 0; }
-.add-credits-popup-wrapper form label {
-  margin-bottom: 25px; }
-.add-credits-popup-wrapper form label:last-child {
-  margin-bottom: 0; }
-.add-credits-popup-wrapper form label::after {
-  display: block;
-  content: '';
-  clear: both; }
-.add-credits-popup-wrapper input {
-  margin-bottom: 0; }
-.add-credits-popup-wrapper .dynamic-content {
-  display: none;
-  margin-top: 25px;
-  margin-bottom: 0; }
-.add-credits-popup-wrapper .monster-switch {
-  margin-left: 20px; }
-.add-credits-popup-wrapper .currency-container {
-  float: right; }
-.add-credits-popup-wrapper .currency-container input {
-  margin-left: 5px; }
-.add-credits-popup-wrapper .add-credits-content-wrapper:not(.active) {
-  display: none; }
-.add-credits-popup-wrapper .add-credits-header-wrapper {
-  padding: 20px;
-  border-bottom: 1px solid #c0c0c9; }
-.add-credits-popup-wrapper .add-credits-header-balance {
-  font-size: 22pt;
-  font-weight: 600;
-  color: #22A5FF; }
-.add-credits-popup-wrapper .add-credits-menu-wrapper {
-  margin-top: 0;
-  padding: 20px 20px 0; }
-.add-credits-popup-wrapper .add-credits-menu-wrapper ul {
-  width: 100%;
-  border-bottom: 1px solid #c0c0c9; }
-.add-credits-popup-wrapper .add-credits-content-wrapper {
-  padding: 20px; }
-.add-credits-popup-wrapper .add-credits-content .text {
-  margin-bottom: 20px;
-  font-size: 14px; }
-.add-credits-popup-wrapper .add-credits-actions {
-  margin-top: 20px;
-  padding-top: 20px;
-  border-top: 1px solid #c0c0c9; }
-.add-credits-popup-wrapper .add-credits-header::after,
-.add-credits-popup-wrapper .add-credits-actions::after {
-  display: block;
-  content: '';
-  clear: both; }
-#myaccount .myaccount-content .billing-content-wrapper .credit-card-inputs {
-    display: inline-block;
-}
-#myaccount .myaccount-content .billing-content-wrapper .credit-card-container {
-    display: inline-block;
-    margin-left: 20px;
-}
-#myaccount .myaccount-content .billing-content-wrapper .credit-card-container .card .front,
-#myaccount .myaccount-content .billing-content-wrapper .credit-card-container .card .back {
-	background: #808089;
-}
-.service-plan-content-wrapper .fancy-header .left-image {
-	width: 57px;
-}
-.service-plan-content-wrapper  .fancy-header .right-block .main-title {
-	font-size: 30px;
-	font-weight: bold;
-}
-.service-plan-content-wrapper .action-bar {
-	height: 40px;
-	width: 100%;
-}
-.service-plan-content-wrapper .action-bar > * {
-	float: left;
-}
-.service-plan-content-wrapper .action-bar .date-selection select {
-	margin-bottom: 0px;
-}
-.service-plan-content-wrapper table.table {
-	border: solid 1px #c0c0c9;
-}
-.service-plan-content-wrapper table.table th {
-	text-align: center;
-	background: #f0f0f9;
-	color: #303039;
-	text-shadow: none;
-	border-bottom: solid 1px #c0c0c9;
-}
-.service-plan-content-wrapper table.table tr {
-	background: #fff;
-}
-.service-plan-content-wrapper table.table td {
-	text-align: center;
-	border: none;
-}
-.service-plan-content-wrapper table.table tr:not(:first-child) td {
-	border-top: solid 1px #c0c0c9;
-}
-.service-plan-content-wrapper table.table tr th:first-child,
-.service-plan-content-wrapper table.table tr th:last-child {
-	width: 10px;
-	padding: 0;
-}
-.service-plan-content-wrapper table.table tr td:first-child,
-.service-plan-content-wrapper table.table tr td:last-child {
-	width: 10px;
-	padding: 0;
-	border: none;
-}
-.transactions-content-wrapper .title-box:first-of-type {
-	margin-right: 10px;
-}
-.transactions-content-wrapper .action-bar-wrapper input {
-	margin: 0 10px 0 5px;
-	width: 80px;
-	cursor: pointer;
-	background-color: #f0f0f9;
-	border-radius: 2px;
-	box-shadow: none;
-	text-align: center;
-}
-.transactions-content-wrapper .action-bar-wrapper > * {
-	vertical-align: baseline; 
-}
-.transactions-content-wrapper .action-bar-wrapper .dropdown {
-	display: inline-block;
-	margin-left: 10px;
-}
-.transactions-content-wrapper .list-transactions {
-	margin-top: 25px;
-}
-.transactions-content-wrapper .list-transactions .no-data {
-	background: none repeat scroll 0 0 #F0F0F0;
-	border: 1px solid #CCCCCC;
-	padding: 15px;
-	text-align: center;
-}
-.transactions-content-wrapper .list-transactions .transaction-box {
-	line-height: 65px;
-	margin-bottom: 15px;
-	background-color: #f0f0f9;
-	border: solid 1px #c0c0c9;
-	border-radius: 2px;
-}
-.transactions-content-wrapper .list-transactions .transaction-box.refund {
-	color: #22A5FF;
-}
-.transactions-content-wrapper .list-transactions .transaction-box.open {
-	background-color: #fff;
-	border-color: #22a5ff;
-}
-.transactions-content-wrapper .list-transactions .transaction-box > *:not(.expandable) {
-	line-height: 65px;
-	height: 65px;
-}
-.transactions-content-wrapper .list-transactions .transaction-box .expandable .table {
-	margin-bottom: 0;
-}
-.transactions-content-wrapper .list-transactions .transaction-box .expand-box {
-	float: left;
-	text-align: center;
-	width: 80px;
-}
-.transactions-content-wrapper .list-transactions .transaction-box .expand-box:not(.disabled) {
-	cursor: pointer;
-}
-.transactions-content-wrapper .list-transactions .transaction-box .expand-box > * {
-	line-height: 65px;
-	text-align: center;
-	font-size: 11px;
-}
-.transactions-content-wrapper .list-transactions .transaction-box .expand-box i {
-	color: #303039;
-	font-size: 16px;
-}
-.transactions-content-wrapper .list-transactions .transaction-box .expand-box.disabled i {
-	color: #c0c0c9;
-}
-.transactions-content-wrapper .list-transactions .transaction-box .expand-box i.collapsed,
-.transactions-content-wrapper .list-transactions .transaction-box.open .expand-box i.expanded {
-	display: inline-block;
-}
-.transactions-content-wrapper .list-transactions .transaction-box.open .expand-box i.collapsed,
-.transactions-content-wrapper .list-transactions .transaction-box .expand-box i.expanded {
-	display: none;
-}
-.transactions-content-wrapper .list-transactions .transaction-box .text-box {
-	margin-left: 80px;
-}
-.transactions-content-wrapper .list-transactions .transaction-box .text-box.declined {
-	color: red;
-}
-.transactions-content-wrapper .list-transactions .transaction-box .text-box > * {
-	float: left;
-	width: 33%;
-	overflow: hidden;
-	white-space: nowrap;
-	text-align: center;
-	font-weight: 600;
-}
-.transactions-content-wrapper .list-transactions .transaction-box .table-content {
-	margin: 0 20px 20px;
-	padding-top: 20px;
-	border-top: solid 1px #c0c0c9;
-}
-.transactions-content-wrapper .list-transactions .transaction-box table.table {
-	border: solid 1px #c0c0c9;
-}
-.transactions-content-wrapper .list-transactions .transaction-box table.table th {
-	text-align: center;
-	background: #f0f0f9;
-	color: #303039;
-	text-shadow: none;
-	border-bottom: solid 1px #c0c0c9;
-}
-.transactions-content-wrapper .list-transactions .transaction-box table.table tr {
-	background: #fff;
-}
-.transactions-content-wrapper .list-transactions .transaction-box table.table td {
-	text-align: center;
-	border: none;
-}
-.transactions-content-wrapper .list-transactions .transaction-box table.table tr:not(:first-child) td {
-	border-top: solid 1px #c0c0c9;
-}
-.transactions-content-wrapper .list-transactions .transaction-box table.table tr th:first-child,
-.transactions-content-wrapper .list-transactions .transaction-box table.table tr th:last-child {
-	width: 10px;
-	padding: 0;
-}
-.transactions-content-wrapper .list-transactions .transaction-box table.table tr td:first-child,
-.transactions-content-wrapper .list-transactions .transaction-box table.table tr td:last-child {
-	width: 10px;
-	padding: 0;
-	border: none;
-}
-#myaccount .myaccount-content .trunks-content .title-bar .title-box.message-box {
-	height: 60px;
-	float: right;
-	width: 200px;
-	overflow: hidden;
-}
-#myaccount .myaccount-content .trunks-content .title-bar .title-box.message-box .title {
-	line-height: 20px;
-	font-weight: 400;
-	font-size: 12px;
-}
-#myaccount .myaccount-content .trunks-content .section-button {
-	margin-top: 40px;
-	padding-top: 20px;
-	border-top: solid 1px #c0c0c9;
-}
-#myaccount .myaccount-content .trunks-content .slider-title {
-	display: inline-block;
-}
-#myaccount .myaccount-content .trunks-content .slider-wrapper {
-	display: inline-block;
-	width: 300px;
-	margin-left: 20px;
-	padding-top: 50px;
-	position: relative;
-}
-.ui-slider-range {
-	background: #22a5ff;
-}
-#myaccount .myaccount-content .trunks-content .slider-wrapper .ui-slider {
-	border: solid 1px #c0c0c9;
-	height: 6px;
-	background: #fff;
-}
-#myaccount .myaccount-content .trunks-content .slider-wrapper .ui-slider .ui-slider-handle {
-	height: 18px;
-	width: 18px;
-	border-radius: 10px;
-	top: -7px;
-	background: #f0f0f9;
-	border: solid 1px #c0c0c9;
-	cursor: pointer;
-}
-#myaccount .myaccount-content .trunks-content .slider-wrapper .slider-value {
-	position: absolute;
-	top: 0px;
-	color: #22a5ff;
-	border: solid 1px #0297e5;
-	padding: 6px 4px;
-	font-size: 24px;
-	font-weight: 600;
-	transform: translateX(-50%);
-	margin-left: 0.5%;
-	background: #fff;
-}
-#myaccount .myaccount-content .trunks-content .slider-wrapper .slider-value:after {
-	border-color: #fff transparent;
-	border-style: solid;
-	border-width: 9px 6px 0;
-	content: "";
-	left: 50%;
-	bottom: -7px;
-	transform: translateX(-50%);
-	position: absolute;
-	
-}
-#myaccount .myaccount-content .trunks-content .slider-wrapper .slider-value:before {
-	border-color: #22a5ff transparent;
-	border-style: solid;
-	border-width: 9px 6px 0;
-	content: "";
-	left: 50%;
-	bottom: -9px;
-	transform: translateX(-50%);
-	position: absolute;
-}
-#myaccount .myaccount-content .trunks-content .question-box {
-	display: inline-block;
-	float: right;
-	background-color: #f0f0f9;
-	padding: 10px;
-	font-size: 12px;
-	border: solid 1px #c0c0c9;
-	margin-top: 10px;
-}
-#myaccount .myaccount-content .trunks-content .question-box > * {
-	display: inline-block;
-}
-#myaccount .myaccount-content .trunks-content .question-box .box-message {
-	width: 240px;
-}
-#myaccount .myaccount-content .trunks-content .question-box .box-icon {
-	width: 40px;
-	vertical-align: top;
-}
-#myaccount .myaccount-content .trunks-content .question-box .box-icon i {
-	color: #c0c0c9;
-	font-size: 30px;
-}
-.user-content-wrapper #form_password .monster-password-strength {
-	width: 220px;
-}
-.user-content-wrapper #form_password label.monster-invalid[for="password"] {
-	margin-top: 25px;
-}
-.errorTracker-content-wrapper .header {
-	margin-bottom: 10px;
-}
-.errorTracker-content-wrapper .api {
-	border: 1px solid #F75D59;
-	background: #FFE4E1;
-}
-.errorTracker-content-wrapper .js {
-	border: 1px solid yellow;
-	background: #FFE5B4;
-}
-.errorTracker-content-wrapper .api-text {
-	font-weight: bold;
-	color: red;
-}
-.errorTracker-content-wrapper .js-text {
-	font-weight: bold;
-	color: orange;
-}
-.errorTracker-content-wrapper .score .number {
-	margin: 0 4px;
-}
-.errorTracker-content-wrapper .box-total .number {
-	font-weight: bold;
-	font-size: 18px;
-	margin-left: 5px;
-}
-.errorTracker-content-wrapper .error-line {
-	margin-bottom: 10px;
-	padding: 10px;
-}
-.errorTracker-content-wrapper .error-line .row-fluid > * {
-	line-height: 30px;
-}
-.errorTracker-content-wrapper .error-line .details {
-	text-align: right;
-}
-.errorTracker-content-wrapper .error-line .verb {
-	margin-right: 10px;
-}
-.errorTracker-content-wrapper .error-line .status {
-	margin-left: 10px;
-}
+/* _colors.scss */
+/* unique color names */
+/* semantic color names */
+@import url("../submodules/balance/balance.css");
+@import url("../submodules/billing/billing.css");
+@import url("../submodules/servicePlan/servicePlan.css");
+@import url("../submodules/transactions/transactions.css");
+@import url("../submodules/trunks/trunks.css");
+@import url("../submodules/user/user.css");
+@import url("../submodules/account/account.css");
+@import url("../submodules/errorTracker/errorTracker.css");
+/* My account */
 #myaccount {
   width: 100%;
   background-color: #fff;
@@ -456,27 +23,35 @@
   -webkit-transition: all 0.3s ease-in;
   -ms-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in; }
+
 #myaccount.myaccount-open {
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1); }
+
 #myaccount > .container-fluid {
   height: 100%;
   padding: 0; }
+
 #myaccount > .container-fluid > .row-fluid {
   height: 100%; }
+
 #myaccount > .container-fluid > .row-fluid > [class*="span"] {
   height: 100%; }
+
+/* MYACCOUNT MENU */
 #myaccount .myaccount-container {
   padding-left: 280px;
   min-height: 100%;
   overflow: hidden; }
+
 #myaccount .myaccount-container > div {
   float: left;
   position: relative;
   padding-bottom: 20000px;
   margin-bottom: -20000px;
-   }
+  /* Hack to keep both columns at the same height */ }
+
 #myaccount .myaccount-menu {
   background-color: #f0f0f9;
   width: 280px;
@@ -488,37 +63,45 @@
   -moz-transition: width 0.3s;
   -o-transition: width 0.3s;
   transition: width 0.3s; }
+
 #myaccount .myaccount-right {
   width: 100%; }
+
 #myaccount .myaccount-menu .nav {
   height: 100%;
   padding-right: 0;
   overflow-x: hidden;
   overflow-y: auto;
   padding-left: 0; }
+
 #myaccount .myaccount-menu .badge {
   background: #fff;
   border: 1px solid #c0c0c9;
   color: #22A5FF;
   border-radius: 0;
   padding: 3px 9px; }
+
 #myaccount .myaccount-menu .nav li {
   font-size: 14px;
   font-weight: 600;
   padding: 10px 20px;
   border-right: 2px solid transparent; }
+
 #myaccount .myaccount-menu .nav > li.active {
   background-color: #fff !important;
   border-right-color: #22A5FF; }
+
 #myaccount .myaccount-menu .nav > li:not(.nav-header):hover {
   background-color: #e0e0e9;
   cursor: pointer; }
+
 #myaccount .myaccount-menu .nav li.nav-header {
   padding: 0;
   padding-bottom: 5px;
   margin: 35px 20px 10px 20px;
   border-bottom: solid 1px #c0c0c9;
   text-transform: uppercase; }
+
 #myaccount .myaccount-menu .nav a {
   background: none !important;
   text-shadow: none;
@@ -528,43 +111,56 @@
   height: 22px;
   overflow: hidden;
   white-space: nowrap; }
+
 #myaccount .myaccount-menu .nav a i {
   display: inline-block;
   margin-right: 10px;
   width: 35px;
   color: #303039; }
+
 #myaccount .myaccount-menu .menu-bottom {
   height: 15%; }
+
 #myaccount .myaccount-menu .nav li .active-highlight i {
   font-size: 20px; }
+
 #myaccount .myaccount-menu .nav li.active .active-highlight > * {
   color: #22A5FF; }
+
 #myaccount .myaccount-menu .menu-bottom .signout {
   text-transform: uppercase;
   background: #333;
   color: #fff;
   height: 100%; }
+
 #myaccount .myaccount-menu .menu-bottom .signout-text {
   padding: 27px 10% 0;
   line-height: 20px;
   font-size: 16px;
   font-weight: 700; }
+
 #myaccount .myaccount-menu .menu-bottom .signout:hover {
   cursor: pointer;
   color: #22A5FF; }
+
+/* MYACCOUNT CONTENT */
 #myaccount .myaccount-content {
   background-color: white;
   padding: 20px 30px; }
+
 #myaccount .myaccount-titlebar {
   padding: 10px 30px;
   margin-top: 20px; }
+
 #myaccount .myaccount-right .myaccount-titlebar .myaccount-module-title {
   font-size: 22px;
   font-weight: 600; }
+
 #myaccount .myaccount-right .myaccount-titlebar .myaccount-close {
   position: absolute;
   top: 20px;
   right: 30px; }
+
 @media (min-width: 769px) and (max-width: 1024px) {
   #myaccount .myaccount-menu {
     width: 200px;
@@ -573,6 +169,7 @@
     padding-left: 200px; }
   #myaccount .myaccount-menu .badge {
     display: none; } }
+
 @media (max-width: 768px) {
   #myaccount .myaccount-menu {
     width: 47px;
@@ -588,38 +185,50 @@
     padding-left: 47px; }
   #myaccount .myaccount-menu .badge {
     display: none; } }
+
 #myaccount .myaccount-content .list-settings .card-type.visa {
   background: url(static/visa.png); }
+
 #myaccount .myaccount-content .list-settings .card-type.amex {
   background: url(static/amex.png); }
+
 #myaccount .myaccount-content .list-settings .card-type.discover {
   background: url(static/discover.png); }
+
 #myaccount .myaccount-content .list-settings .card-type.mastercard {
   background: url(static/mastercard.png); }
+
 #myaccount .myaccount-content .list-settings {
   overflow: visible;
   margin: 0;
   padding: 0;
   list-style-type: none;
   background-color: #f0f0f9; }
+
 #myaccount .myaccount-content .list-settings .settings-item {
   border-top: 1px solid #c0c0c9;
   border-left: 1px solid #c0c0c9;
   border-right: 1px solid #c0c0c9; }
+
 #myaccount .myaccount-content .list-settings .settings-item:first-child {
   border-top-left-radius: 2px;
   border-top-right-radius: 2px; }
+
 #myaccount .myaccount-content .list-settings .settings-item:last-child {
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
   border-bottom: 1px solid #c0c0c9; }
+
 #myaccount .myaccount-content .list-settings .settings-item:last-child .settings-item-content {
   border-radius: 0 0 4px 4px; }
+
 #myaccount .myaccount-content .list-settings .settings-item.open {
   border: 1px solid #22A5FF;
   background-color: #fff; }
+
 #myaccount .myaccount-content .list-settings .settings-item.open + .settings-item {
   border-top: none; }
+
 #myaccount .myaccount-content .list-settings .settings-item .settings-link {
   color: #303039;
   cursor: pointer;
@@ -629,32 +238,41 @@
   line-height: 60px;
   padding: 0px 15px;
   text-decoration: none; }
+
 #myaccount .myaccount-content .list-settings .settings-item:not(.open) .settings-link:hover {
   background-color: #e0e0e9; }
+
 #myaccount .myaccount-content .list-settings .settings-item.open .settings-link {
   padding: 0px;
   margin: 0 15px;
   border-bottom: solid 1px #c0c0c9; }
+
 #myaccount .myaccount-content .list-settings .settings-item .title {
   float: left;
   font-size: 13px;
   font-weight: bold;
   width: 220px; }
+
 #myaccount .myaccount-content .list-settings .settings-item .settings-link .description {
   display: inline-block;
   font-weight: 600; }
+
 #myaccount .myaccount-content .list-settings .settings-item .settings-link .description .number {
   font-weight: bold;
   color: #22A5FF; }
+
 #myaccount .myaccount-content .list-settings .settings-item .settings-link .update {
   float: right;
   overflow: hidden; }
+
 #myaccount .myaccount-content .list-settings .settings-item .settings-link .update .text {
   display: none;
   margin-left: 5px; }
+
 #myaccount .myaccount-content .list-settings .settings-item .settings-link .changes-saved {
   float: right;
   display: none; }
+
 #myaccount .myaccount-content .list-settings .settings-item .settings-link:hover .update .text {
   display: inline-block;
   -webkit-animation-duration: 0.5s;
@@ -663,24 +281,30 @@
   animation-fill-mode: both;
   -webkit-animation-name: myAccountShowEdit;
   animation-name: myAccountShowEdit; }
+
 #myaccount .myaccount-content .list-settings .settings-item-content {
   display: none;
   padding: 20px 15px; }
+
 #myaccount .myaccount-content .list-settings .settings-item-content .form-horizontal {
   margin: 0; }
+
 #myaccount .myaccount-content .list-settings .settings-item-content label.uneditable {
   color: #22A5FF;
   cursor: default;
   font-weight: 600;
   padding-top: 5px; }
+
 #myaccount .myaccount-content .list-settings .settings-item-content .edition {
   display: none; }
+
 #myaccount .myaccount-content .list-settings .settings-item .settings-link .description > ul {
   display: table-cell;
   height: 60px;
   list-style: none outside none;
   margin: 0;
   vertical-align: middle; }
+
 #myaccount .myaccount-content .list-settings .card-type {
   display: inline-block;
   margin-bottom: -9px;
@@ -688,50 +312,69 @@
   background-repeat: no-repeat;
   height: 25px;
   width: 40px; }
+
 #myaccount .myaccount-content .list-settings .input-prepend .add-on {
   padding: 1px 7px;
   height: 26px; }
+
 #myaccount .myaccount-content .list-settings .input-prepend .add-on i {
   margin: 0 5px;
   font-size: 24px; }
+
 #myaccount .myaccount-content .list-settings .input-prepend .add-on .card-type {
   margin: 0; }
+
 #myaccount .myaccount-content .list-settings .settings-item-content .edition .card-type {
   display: none; }
+
 #myaccount .myaccount-content .list-settings .control-label {
   width: 200px;
   text-align: left; }
+
 #myaccount .myaccount-content .list-settings .controls {
   margin-left: 220px; }
+
 #myaccount .myaccount-content .list-settings .controls button, #myaccount .myaccount-content .list-settings .controls input {
   margin-right: 5px; }
+
 #myaccount .myaccount-content .list-settings .controls input {
   border-radius: 2px;
   box-shadow: none;
   border-color: #c0c0c9; }
+
 #myaccount .myaccount-content .list-settings .controls input[type="radio"] {
   margin-top: 0; }
+
 #myaccount .myaccount-content .list-settings .controls input:focus {
   border-color: #22A5FF; }
+
 #myaccount .myaccount-content .list-settings .action-group {
   padding-top: 20px;
   border-top: solid 1px #c0c0c9; }
+
 #myaccount .myaccount-content .list-settings .action-bar {
   float: right; }
+
 #myaccount .myaccount-content .list-settings .action-bar > *:not(:last-child) {
   margin-right: 10px; }
+
 #myaccount .myaccount-content .list-settings .controls .plain-text {
   margin-top: 5px; }
+
 #myaccount .myaccount-content .list-settings .controls.checkbox-container {
   padding-top: 5px; }
+
 #myaccount .myaccount-content .title-bar {
   background-color: #f0f0f9;
   padding: 10px;
   margin-bottom: 20px;
   border: solid 1px #c0c0c9;
   border-radius: 2px; }
+
 #myaccount .myaccount-content .title-bar > *:not(.pull-right) {
   display: inline-block; }
+
+/***** Animations *****/
 @-webkit-keyframes myAccountShowEdit {
   0% {
     opacity: 0;
@@ -739,6 +382,7 @@
   100% {
     opacity: 1;
     margin-right: 0px; } }
+
 @keyframes myAccountShowEdit {
   0% {
     opacity: 0;
@@ -746,9 +390,12 @@
   100% {
     opacity: 1;
     margin-right: 0px; } }
+
+/* Walkthrough popups */
 .walkthrough-popup {
   padding: 15px;
   width: 450px; }
+
 .walkthrough-popup .actions-wrapper {
   border-top: 1px solid #777;
   margin-top: 25px;

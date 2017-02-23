@@ -14,7 +14,7 @@
  */
 /* globals VBArray, PDFJS */
 
-
+'use strict';
 
 // Initializing PDFJS global object here, it case if we need to change/disable
 // some PDF.js features, e.g. range requests
